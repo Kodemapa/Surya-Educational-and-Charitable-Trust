@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Surya Trust - Online Education Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body  ng-app="EducationalTrustApp" ng-controller="MainController">
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h2 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>Surya Trust</h2>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#timeline" class="nav-item nav-link">Timeline</a>
+                    <!-- <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="detail.html" class="dropdown-item">Course Detail</a>
+                            <a href="feature.html" class="dropdown-item">Our Features</a>
+                            <a href="team.html" class="dropdown-item">Instructors</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
+                    </div> -->
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                <!-- </div>
+                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+            </div> -->
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
+        <div class="container text-center my-5 py-5">
+            <h1 class="text-white mt-4 mb-4">Empowering</h1>
+            <h1 class="text-white display-3 mb-5">Ballari's Education Since 2015</h1>
+            <h2 class="text-white mt-4 mb-4">Nurturing minds, shaping futures, and building a stronger community through quality education.</h2>
+            <!-- <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Courses</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Courses 1</a>
+                            <a class="dropdown-item" href="#">Courses 2</a>
+                            <a class="dropdown-item" href="#">Courses 3</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="./baby.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">About Us</h6>
+                        <h1 class="display-4">Surya Educational and Charitable Trust</h1>
+                    </div>
+                    <p>Welcome to "Surya Educational and Charitable Trust, a beacon of excellence in education and community service. Established in 2015", our trust is committed to transforming lives through quality education, innovative learning methods, and a deep-rooted commitment to holistic development.
+                    </p>
+                    <div class="row pt-3 mx-0">
+                        <div class="col-3 px-0">
+                            <div class="bg-success text-center p-4">
+                                <h1 class="text-white" id="student-counter">10K+</h1>
+                                <h6 class="text-uppercase text-white">Students</h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-primary text-center p-4">
+                                <h1 class="text-white" data-toggle="counter-up">4</h1>
+                                <h6 class="text-uppercase text-white"><span class="d-block">Schools</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-secondary text-center p-4">
+                                <h1 class="text-white" data-toggle="counter-up">2</h1>
+                                <h6 class="text-uppercase text-white"><span class="d-block">Colleges</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-warning text-center p-4">
+                                <h1 class="text-white" id="student-counter">150+</h1>
+                                <h6 class="text-uppercase text-white"><span class="d-block">Staffs</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-image" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 my-5 pt-5 pb-lg-5">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Why Choose Us?</h6>
+                        <h1 class="display-4">Why You Should Start Learning with Us?</h1>
+                    </div>
+                    <p class="mb-4 pb-2">At Surya Educational and Charitable Trust, we are more than just educators; we are mentors, guides, and advocates for every child's success. We are committed to:
+                    </p>
+                    <ul>
+                        <li>Providing quality education that balances academic rigor with personal growth.</li>
+                        <li>Offering a wide range of co-curricular activities to nurture diverse talents.</li>
+                        <li>Employing innovative teaching methods that cater to each student's unique learning style.</li>
+                        <li>Building a community that fosters respect, integrity, and lifelong learning.
+                        </li>
+                    </ul>
+                    <div class="d-flex mb-3">
+                        <div class="btn-icon bg-primary mr-4">
+                            <i class="fa fa-2x fa-graduation-cap text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Modern Learning Facilities</h4>
+                            <p>Our state-of-the-art facilities provide a conducive environment for innovative and interactive learning experiences.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="btn-icon bg-secondary mr-4">
+                            <i class="fa fa-2x fa-certificate text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Innovative Curriculum</h4>
+                            <p>Our curriculum is designed to foster creativity, critical thinking, and problem-solving skills, preparing students for the challenges of tomorrow.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="btn-icon bg-warning mr-4">
+                            <i class="fa fa-2x fa-book-reader text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Focus on Holistic Development</h4>
+                            <p class="m-0">We focus on the holistic development of our students, balancing academic excellence with physical, emotional, and social growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="./ball.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Start -->
+
+
+    <!-- Courses Start -->
+    <!-- <div class="container-fluid px-0 py-5">
+        <div class="row mx-0 justify-content-center pt-5">
+            <div class="col-lg-6">
+                <div class="section-title text-center position-relative mb-4">
+                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Courses</h6>
+                    <h1 class="display-4">Checkout New Releases Of Our Courses</h1>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel courses-carousel">
+            <div class="courses-item position-relative">
+                <img class="img-fluid" src="img/courses-1.jpg" alt="">
+                <div class="courses-text">
+                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <div class="border-top w-100 mt-3">
+                        <div class="d-flex justify-content-between p-4">
+                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
+                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
+                        </div>
+                    </div>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-item position-relative">
+                <img class="img-fluid" src="img/courses-2.jpg" alt="">
+                <div class="courses-text">
+                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <div class="border-top w-100 mt-3">
+                        <div class="d-flex justify-content-between p-4">
+                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
+                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
+                        </div>
+                    </div>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-item position-relative">
+                <img class="img-fluid" src="img/courses-3.jpg" alt="">
+                <div class="courses-text">
+                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <div class="border-top w-100 mt-3">
+                        <div class="d-flex justify-content-between p-4">
+                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
+                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
+                        </div>
+                    </div>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-item position-relative">
+                <img class="img-fluid" src="img/courses-4.jpg" alt="">
+                <div class="courses-text">
+                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <div class="border-top w-100 mt-3">
+                        <div class="d-flex justify-content-between p-4">
+                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
+                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
+                        </div>
+                    </div>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-item position-relative">
+                <img class="img-fluid" src="img/courses-5.jpg" alt="">
+                <div class="courses-text">
+                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <div class="border-top w-100 mt-3">
+                        <div class="d-flex justify-content-between p-4">
+                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
+                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
+                        </div>
+                    </div>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-item position-relative">
+                <img class="img-fluid" src="img/courses-6.jpg" alt="">
+                <div class="courses-text">
+                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <div class="border-top w-100 mt-3">
+                        <div class="d-flex justify-content-between p-4">
+                            <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
+                            <span class="text-white"><i class="fa fa-star mr-2"></i>4.5 <small>(250)</small></span>
+                        </div>
+                    </div>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="detail.html">Course Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center bg-image mx-0 mb-5">
+            <div class="col-lg-6 py-5">
+                <div class="bg-white p-5 my-5">
+                    <h1 class="text-center mb-4">30% Off For New Students</h1>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="padding: 30px 20px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="custom-select bg-light border-0 px-3" style="height: 60px;">
+                                        <option selected>Select A courses</option>
+                                        <option value="1">courses 1</option>
+                                        <option value="2">courses 1</option>
+                                        <option value="3">courses 1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="btn btn-primary btn-block" type="submit" style="height: 60px;">Sign Up Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Courses End -->
+
+
+    <section id="timeline" class="py-16 bg-gradient-to-b from-blue-100 to-purple-100">
+        <div class="container mx-auto px-4" >
+            <div class="section-title text-center position-relative mb-5">
+                <!-- <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Instructors</h6> -->
+                <h1 class="display-4">Our Journey</h1>
+            </div>
+          <div class="space-y-8">
+            <div ng-repeat="institution in institutions" class="flex items-center gap-4">
+              <div class="w-1/4 text-right font-semibold text-purple-700">{{institution.year}}</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-white">
+                {{institution.type === 'school' ? '🏫' : '🎓'}}
+              </div>
+              <div class="w-3/4 bg-white shadow-lg p-4">
+                <h4 class="flex items-center justify-between text-blue-800">
+                  {{institution.name}}
+                  <button class="text-purple-600" ng-click="institution.isOpen = !institution.isOpen">
+                    {{institution.isOpen ? '▲' : '▼'}}
+                  </button>
+                </h4>
+                <p class="text-purple-700">{{institution.location}}</p>
+                <div ng-if="institution.isOpen" class="mt-2">
+                  <p class="text-gray-700">{{institution.classes}}</p>
+                  <p class="text-gray-700">{{institution.description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative mb-5">
+                <!-- <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Instructors</h6> -->
+                <h1 class="display-4">Our Trustee</h1>
+            </div>
+            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Managing Trustee/Chairman</h5>
+                        <p class="mb-2">E Jayachandra Reddy, M.Sc (Mathematics)</p>
+                        <p class="mb-2">25 years of experience in teaching</p>
+                        <!-- <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Secretary</h5>
+                        <p class="mb-2">D Sunilkumar Reddy</p>
+                        <p class="mb-2">Contractor & Former</p>
+                        <!-- <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                    <div class="bg-light text-center p-4">
+                        <h5 class="mb-3">Treasurer</h5>
+                        <p class="mb-2">E. Sreedevi, M.Sc (Mathematics)</p>
+                        <p class="mb-2">12 years of experience in teaching</p>
+                        <!-- <div class="d-flex justify-content-center">
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-1 p-1" href="#"><i class="fab fa-youtube"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-image py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="section-title position-relative mb-4">
+                        
+                        <h1 class="display-4">What Say Our CEO</h1>
+                    </div>
+                    <p class="m-0">I am incredibly proud of the work we have accomplished so far and deeply grateful for the support of our donors, volunteers, and partners. Your unwavering trust and commitment make it possible for us to continue our mission of service. Together, let us continue to work towards a world where everyone has the opportunity to live with dignity, hope, and purpose.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="bg-white p-5">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <p>Surya Trust has significantly impacted my life, providing me with educational resources and support that I wouldn't have otherwise. I'm grateful for the opportunities I've received, which have empowered me to pursue my dreams.</p>
+                            <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                               
+                                <div>
+                                    <h5> Long-Time Supporter and Donor</h5>
+                                    <!-- <span>Web Design</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="bg-white p-5">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <p>Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
+                            <div class="d-flex flex-shrink-0 align-items-center mt-4">
+                                <img class="img-fluid mr-4" src="img/testimonial-1.jpg" alt="">
+                                <div>
+                                    <h5>Student Name</h5>
+                                    <span>Web Design</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial Start -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
+                        <div class="d-flex align-items-center mb-5">
+                            <div class="btn-icon bg-primary mr-4">
+                                <i class="fa fa-2x fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="mt-n1">
+                                <h4>Our Location</h4>
+                                <p class="m-0">IDPS Campus,CLR Smart City,Kappagal Road,Ballari - 583103</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-5">
+                            <div class="btn-icon bg-secondary mr-4">
+                                <i class="fa fa-2x fa-phone-alt text-white"></i>
+                            </div>
+                            <div class="mt-n1">
+                                <h4>Call Us</h4>
+                                <p class="m-0">+012 345 6789</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="btn-icon bg-warning mr-4">
+                                <i class="fa fa-2x fa-envelope text-white"></i>
+                            </div>
+                            <div class="mt-n1">
+                                <h4>Email Us</h4>
+                                <p class="m-0">info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
+                        <h1 class="display-4">Send Us A Message</h1>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+        <div class="container mt-5 pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>Surya Trust</h1>
+                    </a>
+                    <p class="m-0">At Surya Educational and Charitable Trust, we are committed to building a brighter future through education. We invite you to explore our institutions and become a part of our growing family. For more information or to enroll, please contact us directly.
+
+                    </p>
+                </div>
+                <!-- <div class="col-md-6 mb-5">
+                    <h3 class="text-white mb-4">Newsletter</h3>
+                    <div class="w-100">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary px-4">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>IDPS Campus,CLR Smart City,Kappagal Road,Ballari - 583103</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                        <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                        <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Our Courses</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
+                        <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#"></a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Designed by <a class="text-white" href="https://kodemapa.com/">KODEMAPA</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <script>
+        angular.module('EducationalTrustApp', [])
+          .controller('MainController', ['$scope', function ($scope) {
+            $scope.isVisible = true;
+    
+            $scope.learnMore = function () {
+              alert('Learn more about our educational programs!');
+            };
+    
+            $scope.contactNow = function () {
+              alert('Thank you for reaching out! We will get back to you soon.');
+            };
+    
+            $scope.logos = ['/placeholder.svg', '/placeholder.svg', '/placeholder.svg', '/placeholder.svg', '/placeholder.svg'];
+    
+            $scope.institutions = [
+              {
+                name: "Vighnaan Kids School",
+                type: "school",
+                year: "2016",
+                classes: "Classes from Nursery to 5th Std",
+                description:"Join our vibrant school, where structured academics meet creative play to inspire critical thinking and holistic growth. Our dedicated, qualified teachers ensure personalized attention in a nurturing setting. With a diverse curriculum and modern facilities, we provide a comprehensive education that empowers every child to thrive. Discover the perfect place for your child to learn, grow, and excel!",
+                location: "Kappagal Road",
+                isOpen: false
+              },
+              {
+                name: "Vighnaan E Techno School",
+                type: "school",
+                year: "2019",
+                classes: "Classes from 1st Std to 8th Std",
+                description:"Welcome to Vignan Techno School, where innovation meets education in a thriving, technology-driven environment. Our dedicated team of educators delivers personalized learning experiences, combining rigorous academics with creative exploration. With our state-of-the-art facilities and forward-thinking curriculum, we are committed to nurturing every student's potential and preparing them for a successful future. Discover the excellence and inspiration that make Vignan Techno School a standout choice for your child's education!",
+                location: "Sadhshiva Nagar",
+                isOpen: false
+              },
+              {
+                name: "International Delhi Public School",
+                type: "school",
+                year: "2021",
+                classes: "Classes from Nursery to 2nd Std",
+                description:"Welcome to International Delhi Public School, where our early years from nursery to 2nd grade set the foundation for lifelong learning. We blend a nurturing environment with a dynamic curriculum to foster curiosity, creativity, and early academic skills. Our passionate educators and modern facilities ensure each child receives personalized attention and support, creating a joyful and effective learning experience. Discover how we ignite young minds and prepare them for future success!",
+                location: "Parvathinagar",
+                isOpen: false
+              },
+              {
+                name: "International Delhi Public School",
+                type: "school",
+                year: "2022",
+                classes: "Classes from Nursery to 10th Std",
+                description:"Welcome to International Delhi Public School, where excellence in education meets global standards. Our passionate educators and innovative curriculum create an enriching environment that fosters academic brilliance, critical thinking, and holistic development. With modern facilities and a commitment to nurturing future leaders, International Delhi Public School is dedicated to providing an outstanding educational experience for every student. Discover a place where your child's potential truly shines!",
+                location: "Kappagal Road",
+                isOpen: false
+              },
+              {
+                name: "Vighnaan Independent PU College",
+                type: "school",
+                year: "2023",
+                classes: "1st PUC and 2nd PUC, Science & Commerce",
+                description:"Welcome to Vignan Independent PU College, where academic excellence and innovation come together. Our dedicated faculty and cutting-edge resources create a stimulating environment that empowers students to achieve their best. With a focus on comprehensive education and personal growth, Vignan Independent PU College is committed to preparing students for success in higher education and beyond. Discover how we foster a passion for learning and excellence in every student!",
+                location: "Sanganakallu",
+                isOpen: false
+              },
+              {
+                name: "Oxford Business College",
+                type: "school",
+                year: "2023",
+                classes: "Degree BBA, BCA & BCom",
+                description:"Welcome to Oxford Degree College, where tradition meets innovation in higher education. Our expert faculty and modern facilities provide a dynamic learning environment that inspires academic excellence and personal growth. Committed to nurturing the leaders of tomorrow, Oxford Degree College offers a comprehensive education that prepares students for success in their chosen fields. Discover a place where your future begins with excellence!",
+                location: "Sanganakallu",
+                isOpen: false
+              }
+            ];
+          }]);
+      </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
